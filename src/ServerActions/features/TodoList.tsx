@@ -1,5 +1,5 @@
 import Todo from "./Todo"
-import fetchTodos from "@/lib/fetchTodos"
+import fetchTodos from "@/ServerActions/lib/fetchTodos"
 
 export default async function TodoList() {
     const todos = await fetchTodos()

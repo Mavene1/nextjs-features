@@ -1,5 +1,5 @@
-import Todo from "@/app/components/Todo"
-import fetchTodo from "@/lib/fetchTodo"
+import Todo from "@/ServerActions/features/Todo"
+import fetchTodo from "@/ServerActions/lib/fetchTodo"
 import { notFound } from "next/navigation"
 
 type Props = {

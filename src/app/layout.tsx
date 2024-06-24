@@ -1,5 +1,5 @@
 import './globals.css'
-import Navbar from "./components/Navbar"
+import Navbar from "../ServerActions/features/Navbar"
 
 export const metadata = {
   title: 'Next Todos',
@@ -14,8 +14,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="dark:bg-slate-800">
-        <Navbar />
-        <main className="mx-auto max-w-xl p-4 bg-stone-200 min-h-screen text-black">
+        {/* <Navbar /> */}
+        <main className="mx-auto max-w-full p-4 bg-stone-200 min-h-screen text-black">
           {children}
         </main>
       </body>

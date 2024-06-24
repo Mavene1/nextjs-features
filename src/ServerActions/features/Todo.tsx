@@ -1,6 +1,6 @@
 import { FaTrash } from "react-icons/fa"
 import Link from "next/link"
-import { deleteTodo } from "@/lib/actions"
+import { deleteTodo } from "@/ServerActions/lib/actions"
 import UpdateCheckbox from "./UpdateCheckbox"
 
 export default function Todo(todo: Todo) {

@@ -4,3 +4,9 @@ type Todo = {
     title: string,
     completed: boolean,
 }
+
+type PostProps = {
+    id: number;
+    title: string;
+    body: string;
+  };
