@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="dark:bg-slate-800">
+      <body className="font-futura dark:bg-slate-800">
         {/* <Navbar /> */}
         <main className="mx-auto max-w-full p-4 bg-stone-200 min-h-screen text-black">
           {children}

@@ -2,6 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+* {font-display: block;}
+@font-face {
+  font-family: "FuturaBookBt";
+  src: url("/fonts/futura-book-bt.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaMediumBt";
+  src: url("/fonts/futura medium bt.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaBook";
+  src: url("/fonts/Futura Book font.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Futura";
+  src: url("/fonts/Futura.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaMedium";
+  src: url("/fonts/FuturaMedium.woff2") format("truetype");
+}
+@font-face {
+  font-family: "FuturaBold";
+  src: url("/fonts/FuturaBold.ttf") format("truetype");
+}
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
