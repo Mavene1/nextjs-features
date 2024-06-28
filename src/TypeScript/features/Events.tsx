@@ -1,17 +1,34 @@
+"use client"
+
 import React from "react";
 
-const CRUD = () => {
+const Events = () => {
+  const handleClick = (e:React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault()
+    console.log("CLicked");
+  };
+  const handleChange = (e:React.ChangeEvent<HTMLInputElement>) => {
+    e.preventDefault()
+    console.log("Changed");
+  };
+const handleDelete=(e:React.MouseEvent<HTMLButtonElement>, id:number)=>{
+    e.preventDefault()
+    console.log(`Deleted Post: ${id}`);
+}
+
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
       <div className="text-2xl font-bold mb-4 p-4">CRUD</div>
       <form className="mb-6 p-4 bg-gray-100 rounded-lg">
         <div className="flex items-center">
           <input
+          onChange={handleChange}
             type="text"
             placeholder="Search..."
             className="flex-1 p-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           <button
+            onClick={handleClick}
             type="submit"
             className="px-4 py-2 bg-blue-500 text-white font-semibold rounded-r-md hover:bg-blue-600"
           >
@@ -29,6 +46,7 @@ const CRUD = () => {
           rely entirely on the public cloud provider&apos;s infrastructure.
         </p>
         <button
+        onClick={(e)=>handleDelete(e,1)}
           type="submit"
           className="px-4 py-2 bg-red-500 text-white font-semibold rounded-md hover:bg-red-600"
         >
@@ -46,6 +64,7 @@ const CRUD = () => {
           provider&apos;s infrastructure.
         </p>
         <button
+        onClick={(e)=>handleDelete(e,2)}
           type="submit"
           className="px-4 py-2 bg-red-500 text-white font-semibold rounded-md hover:bg-red-600"
         >
@@ -56,4 +75,4 @@ const CRUD = () => {
   );
 };
 
-export default CRUD;
+export default Events;
